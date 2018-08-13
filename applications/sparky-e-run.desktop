@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Sparky E Run
+Exec=/usr/bin/sparky-e-run
+Icon=system-run
+NoDisplay=true
