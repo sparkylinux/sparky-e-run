@@ -14,6 +14,9 @@ else
 		CHECKTRAYER="`which trayer`"
 		CHECKNM="`which nm-applet`"
 		if [ "$CHECKTRAYER" != "" ] && [ "$CHECKNM" != "" ]; then
+			if [ $(pidof trayer) ]; then
+				killall -9 trayer &
+			fi
 			trayer --edge bottom --widthtype request --align right --heighttype pixel --height 40 &
 			nm-applet &
 			/opt/sparky/nm-applet-reload &

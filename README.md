@@ -22,6 +22,7 @@ coreutils
 enlightenment
 network-manager-gnome
 sparky-nm-applet
+sysvinit-utils
 trayer
 
 Install:
